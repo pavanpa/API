@@ -3,17 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.GitHubCreateRepository">
+      <class name="test.GitHubGetRepository">
         <methods>
+          <include name="gitHubGetPrivateRepo"/>
           <include name="beforeClass"/>
-          <include name="githubCreatePublicRepo"/>
-          <include name="githubCreatePrivateRepo"/>
           <include name="beforeSuite"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="githubCreatePrivateRepoPojoTest"/>
         </methods>
-      </class> <!-- test.GitHubCreateRepository -->
+      </class> <!-- test.GitHubGetRepository -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

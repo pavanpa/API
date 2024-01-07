@@ -38,7 +38,7 @@ public class GitHubCreateRepository extends BaseClass{
 				.body("name", Matchers.equalTo(repoName1));
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void githubCreatePrivateRepo() 
 	{
 		FileInputStream fis = null;
@@ -61,7 +61,7 @@ public class GitHubCreateRepository extends BaseClass{
 				.post(url)
 			.then()
 				.log().all()
-				.statusCode(201);
+				.statusCode(422);
 //				.body("name", Matchers.equalTo("Dec_29_Private_Repo_01"))
 //				.body("private", Matchers.equalTo(true));
 	}

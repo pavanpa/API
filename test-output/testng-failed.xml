@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.GitHubCreateRepository">
+      <class name="test.GitHubListRepository">
         <methods>
-          <include name="githubCreatePublicRepo"/>
           <include name="beforeClass"/>
           <include name="beforeSuite"/>
+          <include name="listPublicRepository"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- test.GitHubCreateRepository -->
+      </class> <!-- test.GitHubListRepository -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -33,7 +33,7 @@ public class GitHubGetRepository extends BaseClass{
 			.given()
 				.pathParam("org", "orgpavanb90")
 				.pathParam("repo", "repo_dec_27_07")
-				.header("Authorization","Bearer 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")
+				.header("Authorization",token)
 			.when()
 				.get(url)
 			.then()
